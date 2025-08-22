@@ -72,14 +72,6 @@ func main() {
 		fmt.Printf("%d. %s (%s)\n", i+1, repo.GetFullName(), repo.GetHTMLURL())
 	}
 
-	fmt.Println("\nAccess token validation...")
-	user, _, err := client.Users.Get(ctx, "")
-	if err != nil {
-		log.Printf("Warning: Failed to get user info: %v", err)
-	} else {
-		fmt.Printf("Authenticated as bot: %s\n", user.GetLogin())
-	}
-
 	if len(repositories.Repositories) > 0 {
 		testRepo := repositories.Repositories[0]
 		owner := testRepo.GetOwner().GetLogin()

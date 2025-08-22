@@ -6,3 +6,11 @@ GitHub Appを使用してインストールアクセストークンを発行し�
 - Repositories.DownloadContents
 - Repositories.ListCommits
 - RateLimits
+
+## 環境変数について
+
+key|value
+-|-
+GITHUB_APP_ID|GitHubAppのページから取得
+GITHUB_INSTALLATION_ID|Applicationsの画面から、Configureをクリックした遷移先のURL`https://github.com/settings/installations/xxxxxxxx`のxxxxxxxxの部分
+GITHUB_PRIVATE_KEY|GitHubAppのページからPrivate Keyを発行して取得
